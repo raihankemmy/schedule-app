@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Latihan Bnv</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="jadwal">Jadwal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

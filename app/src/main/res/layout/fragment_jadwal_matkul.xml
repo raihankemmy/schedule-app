@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".JadwalFragment">
+
+    <ImageView
+        android:id="@+id/iv_foto_profil"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:src="@drawable/image0" />
+
+    <TextView
+        android:id="@+id/tv_angkatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="2019"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_foto_profil"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jurusan" />
+
+    <TextView
+        android:id="@+id/tv_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="1910511035"
+        app:layout_constraintStart_toEndOf="@+id/iv_foto_profil"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+    <TextView
+        android:id="@+id/tv_jurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="S1 Informatika"
+        app:layout_constraintStart_toEndOf="@+id/iv_foto_profil"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nim" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="30dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Raihan Kemmy Rachmansyah"
+        app:layout_constraintStart_toEndOf="@+id/iv_foto_profil"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:padding="15dp"
+        android:text="Jadwal Mata Kuliah"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_jadwal_matkul"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_angkatan"
+        tools:listitem="@layout/item_jadwal" />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
